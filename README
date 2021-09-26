@@ -1,0 +1,9 @@
+To view the presentation, go to this link: https://rawcdn.githack.com/Benjamin-Menashe/Data_Products_Final/95ccf131a419208407b90feb377d2ee2de055fea/Presentation.html
+
+To view the Shiny webapp, go to this link: https://bmenashe.shinyapps.io/Week_4_Project/
+
+DOCUMENTATION
+This app lets the user learn about spurious correlations. Those can arise in 2 independant samples. 
+This app lets the user pick the sample size and the types of distributions to sample from, and it shows a linear relationship between them.
+
+Any linear relationship shown is spurious as the distributions are independant and the samples drawn randomly. 
