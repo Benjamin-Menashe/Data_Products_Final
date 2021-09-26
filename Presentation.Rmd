@@ -1,0 +1,32 @@
+---
+title: "Week 4 Project"
+author: "Benjamin Menashe"
+date: "9/26/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Spurious Correlations
+Under certain circumstances, samples drawn randomly from two **independent** distributions will have a linear relationship that is significantly different than 0. This is called a "Spurious Correlation". 
+
+## The Problem
+1. If we treat a linear correlation as an indication of a relationship between the variables, such spurious correlations can make us believe independent correlations are actually dependent.
+2. This gets worse if we do a correlation test and get a low p-value.
+3. Lack of awareness to this problem is a problem by itself.
+
+## Example
+
+```{r, echo = TRUE}
+set.seed(1234); n = 25; X <- rexp(n); Y <- rexp(n)
+plot(X,Y); abline(lm(Y~X), col = "red")
+```
+
+## The Solution
+I created a Shiny app where users can choose 2 random samples from a variety of distributions and see the spurious relationship. The samples are independent of each other. 
+
+**I believe this will enhance awareness to the problem of spurious correlations and may serve as a useful learning tool.** 
+
+Thanks!
